@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+    <script>
+        function showAlert() {
+            alert("Response noted! Submit another Response!");
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.4.0/fabric.min.js"></script>
+</head>
+
+<body class="text-center bg-gray-200">
+    <form action="{{ url_for(" foo") }}" class="max-w-5xl mx-auto mt-8 p-8 bg-white rounded shadow-lg" method="post">
+        <h6 class="text-xl mb-4">Question 1:</h6>
+
+        <h3 class="text-2xl mb-4 font-semibold">What is Encapsulation? Give an Example.</h3>
+        <span class="bg-gray-300 text-gray-700 px-2 py-1 rounded text-sm ">Marks-5</span>
+        <textarea name="second" rows="5" cols="50" placeholder="Answer"
+            class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500 mb-4 my-6"></textarea>
+
+
+
+        <h6 class="text-xl mb-4 mt-8">Question 2:</h6>
+        <h3 class="text-2xl mb-4 font-semibold">Define Asymptotic Notation and list its types.</h3>
+        <span class="bg-gray-300 text-gray-700 px-2 py-1 rounded text-sm ">Marks-5</span>
+        <textarea name="second" rows="5" cols="50" placeholder="Answer"
+            class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500 mb-4 my-6"></textarea>
+
+        <h6 class="text-xl mb-4 mt-8">Question 3:</h6>
+        <h3 class="text-2xl mb-4 font-semibold">What is Polymorphism? List its Types.</h3>
+        <span class="bg-gray-300 text-gray-700 px-2 py-1 rounded text-sm ">Marks-5</span>
+        <textarea name="third" rows="5" cols="50" placeholder="Answer"
+            class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500 mb-4 my-6"></textarea>
+
+        <div class="flex items-center justify-center">
+            <input type="email" placeholder="Email ID*" name="emailID"
+                class="w-64 p-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500">
+        </div>
+
+        <div class="flex items-center justify-center">
+            <input type="submit" value="Submit"
+                class="bg-blue-500 text-white my-3 py-2 px-4 rounded hover:bg-blue-600 cursor-pointer"
+                onclick="showAlert()">
+        </div>
+
+    </form>
+</body>
+
+</html>

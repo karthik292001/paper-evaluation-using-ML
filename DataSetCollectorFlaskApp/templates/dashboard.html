@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- Load Tailwind CSS from CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.17/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Use Poppins font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 px-40">
+    <div class="container mx-auto px-4 py-8">
+        <!-- User Info -->
+        <div class="flex justify-between items-center mb-6">
+            <h1 class="text-2xl font-semibold text-gray-800">Welcome!</h1>
+        </div>
+        <!-- Exam Info -->
+        <div class="bg-white rounded-lg shadow-md p-4 flex justify-between">
+            <div>
+                <h2 class="text-xl font-semibold text-gray-800 mb-4 ">Exam Information</h2>
+
+                <ul>
+                    <li class="mb-2"><span class="font-bold">Exam Name:</span> OOP</li>
+                    <li class="mb-2"><span class="font-bold">Exam Duration:</span> 60 minutes</li>
+                    <li class="mb-2"><span class="font-bold">Exam Date:</span> March 1, 2023</li>
+                    <li><span class="font-bold">Exam Time:</span> 9:00 AM</li>
+                </ul>
+            </div>
+
+            <div class="flex justify-end my-4">
+                <a href="/exam">
+                    <button
+                        class="bg-blue-500 hover:bg-blue-600 transition-all ease-in-out delay-100ms text-white font-bold py-2 px-4 rounded-md">Exam
+                        Link</button>
+                </a>
+            </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-4 flex justify-between my-10">
+            <div>
+                <h2 class="text-xl font-semibold text-gray-800 mb-4">Exam Information</h2>
+
+                <ul>
+                    <li class="mb-2"><span class="font-bold">Exam Name:</span> DBMS</li>
+                    <li class="mb-2"><span class="font-bold">Exam Duration:</span> 60 minutes</li>
+                    <li class="mb-2"><span class="font-bold">Exam Date:</span> March 10, 2023</li>
+                    <li><span class="font-bold">Exam Time:</span> 9:00 AM</li>
+                </ul>
+            </div>
+
+            <div class="flex justify-end my-4">
+                <a href="/exam">
+                    <button type="button"
+                        class="bg-blue-500 rounded-md focus:outline-none opacity-25  transition-all ease-in-out delay-100ms text-white font-bold py-2 px-4  "
+                        disabled>Exam
+                        Link</button>
+                </a>
+            </div>
+
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-4 flex justify-between my-10">
+            <div>
+                <h2 class="text-xl font-semibold text-gray-800 mb-4">Exam Information</h2>
+
+                <ul>
+                    <li class="mb-2"><span class="font-bold">Exam Name:</span> CG </li>
+                    <li class="mb-2"><span class="font-bold">Exam Duration:</span> 60 minutes</li>
+                    <li class="mb-2"><span class="font-bold">Exam Date:</span> March 15, 2023</li>
+                    <li><span class="font-bold">Exam Time:</span> 9:00 AM</li>
+                </ul>
+            </div>
+
+            <div class="flex justify-end my-4">
+                <a href="/exam">
+                    <button type="button"
+                        class="bg-blue-500 rounded-md focus:outline-none opacity-25  transition-all ease-in-out delay-100ms text-white font-bold py-2 px-4  "
+                        disabled>Exam
+                        Link</button>
+                </a>
+            </div>
+        </div>
+</body>
+
+</html>
